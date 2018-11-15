@@ -19,8 +19,9 @@ def read_png(img_dir_list,cls='train'):
     print(os.path.join(DATA_DIR,cls,marker,item))
     return np.array(imgs_list),np.array(label_list)
 vcand = np.load('/data1/home/tom/modelnet40/pytorch-rotationnet/vcand_case2.npy')
-from resnet_Helper import * 
-from vgg_Helper import *
+#from resnet_Helper import * 
+#from vgg_Helper import *
+from Inception_Helper import *
 #tf.enable_eager_execution()
 img_size = 224
 nview   = 20
